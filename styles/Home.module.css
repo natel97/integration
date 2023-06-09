@@ -63,14 +63,19 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
+  }
+  
 .grid {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+}
+
+.grid-item {
+  flex: 1;
 }
 
 .card {
@@ -93,7 +98,6 @@
 }
 
 .card h2 {
-  margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
 
@@ -113,4 +117,9 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.integrated {
+  background: #003407;
+  color: white;
 }

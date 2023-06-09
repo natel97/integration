@@ -1,0 +1,122 @@
+.field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .field {
+        flex-direction: column;
+    }
+}
+
+.field table, .field p {
+    font-size: 1.5rem;
+}
+
+
+.field input, .field select {
+    border-radius: 12px;
+    font-size: 1.5rem;
+    transition: all .2s ease-out;
+    background: white;
+    width: 100%;
+}
+
+.field input:focus {
+    outline-color:  #2244CC;
+    transition: all .2s ease-out
+}
+
+.input input:active {
+    transition: all .2s ease-out
+}
+
+.field label {
+    font-size: 1.5rem;
+}
+
+.field label, .field input, .field select {
+    flex: 1;
+    padding: 1rem;
+}
+
+.button {
+    background: white;
+    border-radius: 12px;
+    border: 2px solid #2244CC;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.heading, .remove-integration h1 {
+    background: #2244CC;
+    margin: 0;
+    color: white;
+    padding: 2rem;
+}
+
+.error {
+    margin: 0;
+    background: #610c0c;
+    color: white;
+    width: 100%;
+    padding: 2rem;
+}
+
+.field table {
+    width: 100%;
+    word-break: break-all;
+}
+
+.inputs {
+    flex: 1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.full-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-integration {
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-integration>h1 {
+    background: #610c0c;
+}
+
+.remove-integration>div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.danger {
+    background: #610c0c;
+}
+
+.warning {
+    background: #441;
+}
+
+.warning, .danger {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
